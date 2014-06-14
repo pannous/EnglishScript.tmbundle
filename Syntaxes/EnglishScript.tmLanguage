@@ -9,13 +9,14 @@
 	<key>foldingStartMarker</key>
 	<string>(
 		 how to\s+
+		|define.*
 		|if\b .* \bthen\b
 		|repeat\b .*
 		|while\b .*
 		|try\b .*)
 	</string>
 	<key>foldingStopMarker</key>
-	<string>^\s*(end|done|ok|finished|OK)\b.*$</string>
+	<string>^\s*(end|done|ok|finished|OK)\b.*</string>
 	<key>keyEquivalent</key>
 	<string>~@E</string>
 	<key>name</key>
@@ -24,45 +25,57 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(if|while|for|return|then|do)\b</string>
+			<string>\b(define|if|while|for|return|then|do|otherwise|as|to|at|in|by|of|about|above|after|against|apart\s+from|around|as|aside\s+from|as|before|behind|below|beneath|beside|between|considering|from|in|instead\sof|into|of|on|onto|out\s+of|over|since|through|thru|to|with|without|default|finally|is|end|ok|done|endif|OK)\b</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(let|be|less|smaller|or)\b</string>
+			<string>\b(let|be|is|are|equals|less|smaller|equal|equals|same)\b</string>
 			<key>name</key>
 			<string>storage</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:from|to|at|in|by|of|about|above|after|against|apart\s+from|around|as|aside\s+from|at|before|behind|below|beneath|beside|between|considering|from||in|instead\s+of|into|of|on|onto|out\s+of|over|since|through|thru|to|with|without)\b</string>
+			<string>\b(pi|\d+|one|two|zero)\b</string>
 			<key>name</key>
-			<string>variable.language.prepositions.en</string>
+			<string>constant.numeric</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|of|a|the|default|finally|is|end|ok|done|endif|OK)\b</string>
+			<string>\b(100)\b</string>
 			<key>name</key>
-			<string>storage.type.method</string>
+			<string>constant.language</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(true)\b</string>
+			<string>\b(true|false|yes|no)\b</string>
 			<key>name</key>
 			<string>constant</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>//.*|#.*|/\*.*\*/|--.*</string>
+			<string>\b(x|y|z|i)\b</string>
 			<key>name</key>
-			<string>comment</string>
+			<string>variable.language</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(100|bla|var)\b</string>
+			<string>\b(a|an|the)\b</string>
 			<key>name</key>
-			<string>constant.language</string>
+			<string>article</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(the|an)\b</string>
+			<key>name</key>
+			<string>storage.type.method</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>//.*|/\*.*\*/|--.*|&lt;!--.*|.*--&gt;|#.*</string>
+			<key>name</key>
+			<string>comment</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -103,9 +116,9 @@
 			<key>comment</key>
 			<string>match regular function like: function myFunc(arg) { … }</string>
 			<key>match</key>
-			<string>\b(function|define|how to|def|method|public void)\b\s+([a-zA-Z]+\s*)*\s*\b(a|the)\b</string>
+			<string>xxxxxxx\b(function|define|how to|def|method|public void)\b\s+([a-zA-Z]+\s*)*</string>
 			<key>name</key>
-			<string>meta.function.js</string>
+			<string>xxxmeta.function</string>
 		</dict>
 		<dict>
 			<key>include</key>
