@@ -3,8 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>EnglishScript</string>
+	<string>NiScript</string>
 	<key>uuid</key>
 	<string>1E8059C1-75E9-46B4-B9A5-3610B59A6E2E</string>
+  <!-- <key>include</key>
+  <string>text.typescript.basic</string>
+  <key>include</key>
+  <string>typescript.basic</string>
+  <key>include</key>
+  <string>typescript</string> -->
 </dict>
 </plist>
