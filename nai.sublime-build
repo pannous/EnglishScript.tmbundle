@@ -1,0 +1,7 @@
+{
+    // "shell_cmd": "/opt/TurboScript/bin/tc \"$file\" --run",
+    "shell_cmd": "/opt/TurboScript/debug/test.sh \"$file\" ",
+    // "shell_cmd": "node -i -r /opt/TurboScript/debug/debug.js -- \"$file\" --run",
+    "selector": "source.nai",
+    "env": {"PYTHONIOENCODING": "utf8"}
+}
