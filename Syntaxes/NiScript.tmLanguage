@@ -9,11 +9,25 @@
 			<string>ang</string>
 			<string>ni</string>
 			 <string>nis</string>
+			 <string>nais</string>
+			 <string>nǎis</string>
+			 <string>nǎi</string>
+			 <string>乃</string>
 			<string>angle</string>
 		</array>
 
 		<key>name</key>
-		<string>EnglishScript</string>
+		<string>nǎiscript</string>
+		<!-- <string>Angle</string> -->
+		<!-- <string>SansScript</string> -->
+		<!-- <string>SanScript</string> -->
+		<!-- <string>Sans</string> -->
+		<!-- <string>San</string> -->
+		<!-- <string>sǎn (locker)</string> -->
+		<!-- <string>伞</string> -->
+		<!-- <string>三</string> -->
+		<!-- <string>单</string> -->
+		<!-- <string>山</string> -->
 
 <!-- not used in intellij :(-->
 		<key>foldingStartMarker</key>
@@ -21,10 +35,6 @@
 		<key>foldingStopMarker</key>
 		<string>end</string>
 
-		<key>foldingStartMarker</key>
-		<string>{</string>
-		<key>foldingStopMarker</key>
-		<string>}</string>
 
 		<!--<dict>-->
 		<!--<key>include</key>-->
@@ -234,20 +244,20 @@
 				<key>name</key>
 				<string>constant.other.angle</string>
 			</dict>
-			<dict>
+<!-- 			<dict>
 				<key>include</key>
 				<string>#comments</string>
-			</dict>
+			</dict> -->
 			<dict>
 				<key>match</key>
 				<string>^[a-z][A-Za-z0-9_']*\s+</string>
 				<key>name</key>
 				<string>entity.name.function.angle</string>
 			</dict>
-			<dict>
+<!-- 			<dict>
 				<key>include</key>
 				<string>#infix_op</string>
-			</dict>
+			</dict> -->
 			<dict>
 				<key>match</key>
 				<string>[|!%$?~+:\-.=&lt;/&gt;&amp;\\*^]+</string>
@@ -364,13 +374,13 @@
 				<string>constant.numeric</string>
 			</dict>
 
-			<dict>
+	<!-- 		<dict>
 				<key>match</key>
 				<string>\b(\+|-)?(0(x|X)[0-9a-fA-F]*)|([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(\w+)?\b</string>
 				<key>name</key>
 				<string>constant.numeric.source</string>
 			</dict>
-
+ -->
 			<dict>
 				<key>match</key>
 				<string>\b(my|result|it|your|anything|true|false|yes|no|nil|null|nix|nill|nil|none|no|null|any|all|some|this|base|super)\b</string>
@@ -531,13 +541,17 @@
 			<string>\\{</string>
 			<key>end</key>
 			<string>\\}</string>
+				<key>foldingStartMarker</key>
+				<string>{</string>
+				<key>foldingStopMarker</key>
+				<string>}</string>
 			<key>name</key>
 			<string>meta.scriptblock</string>
 		</dict>
 	</dict>
 
 		<key>scopeName</key>
-		<string>source.englishScript</string>
+		<string>source.nai</string>
 		<key>uuid</key>
 		<string>82344575-61EC-45EF-BB84-6662B5C9062A</string>
 	</dict>

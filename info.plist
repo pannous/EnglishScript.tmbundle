@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>NiScript</string>
+	<string>NaiScript</string>
 	<key>uuid</key>
-	<string>1E8059C1-75E9-46B4-B9A5-3610B59A6E2E</string>
+	<string>1E8059C1-75E9-46B4-B9A5-3610B59A6E00</string>
   <!-- <key>include</key>
   <string>text.typescript.basic</string>
   <key>include</key>
